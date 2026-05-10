@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="icon" href="./favicon.png" />
+        <link href="./index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <canvas id="canvas"></canvas>
+            <div class="logs-container">
+                <h1>Logs</h1>
+                <pre id="logs">No logs currently...</pre>
+            </div>
+            <div class="instructions">
+                <h1>Instructions</h1>
+                <p>
+                    Make sure you're connected to the Arduino with the "Connect
+                    to Arduino" button.
+                </p>
+                <p>Arrow keys to move, R to restart the game.</p>
+                <p>
+                    Not working? Reload and/or reconnect the Arduino until it
+                    works.
+                </p>
+                <p>
+                    Have fun.
+                    <a href="https://github.com/Creative0708/snakez80"
+                        >Source code</a
+                    >
+                </p>
+            </div>
+            <p id="msgs">
+                Disconnected.
+                <button onclick="connect()">Connect to Arduino</button>
+            </p>
+        </div>
+        <script src="http://localhost:35729/livereload.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
